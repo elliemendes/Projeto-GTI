@@ -1,11 +1,12 @@
 tasks = []
 
 def add_task(title, description, priority):
-    tasks.append ({ 'title': title,
+    tasks = { 'title': title,
         'description': description,
         'priority': priority,
-        'status': 'pending'
-    })
+        'status': 'pending'}
+    tasks.append(tasks)
+    
 
 def get_tasks():
     return tasks
